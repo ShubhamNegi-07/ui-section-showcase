@@ -1,11 +1,11 @@
-import workImg1 from "../../assets/Work img1.jpg";
 import RightCardContent from "./RightCardContent";
 
-const RightCard = () => {
+const RightCard = (props) => {
   return (
-    <div className="h-full overflow-hidden relative w-65 bg-red-500 rounded-4xl">
-      <img className="h-full w-full object-cover" src={workImg1} alt="Work" />
-      <RightCardContent/>
+    <div className="h-full shrink-0 overflow-hidden relative w-65 bg-red-500 rounded-4xl">
+
+      <img className="h-full w-full object-cover" src={props.img} alt="Work" />
+      <RightCardContent id={props.id} tag={props.tag}/>
     </div>
   );
 };
