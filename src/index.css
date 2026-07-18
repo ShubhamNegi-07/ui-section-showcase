@@ -3,3 +3,16 @@
     display: none;
 
 }
+
+@keyframes shine {
+  from {
+    left: -120%;
+  }
+  to {
+    left: 130%;
+  }
+}
+
+.animate-shine {
+  animation: shine 1.8s linear infinite;
+}
