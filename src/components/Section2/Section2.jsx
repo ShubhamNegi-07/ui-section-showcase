@@ -1,8 +1,15 @@
+import Header from "./Header"
+import ImageCard from "./ImageCard"
+import TextContant from "./TextContant"
 
 
 const Section2 = () => {
   return (
-    <div className='h-screen w-full bg-gray-900'>Section2</div>
+    <div className='h-full w-full'>
+      <TextContant/>
+      <ImageCard/>
+      <Header/>
+    </div>
   )
 }
 
